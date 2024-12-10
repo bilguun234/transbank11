@@ -116,22 +116,23 @@ const styles = {
     marginTop: '270px',
   },
   heading2: {
-    fontSize: "1.6rem",
+    fontSize: "clamp(1.2rem, 3vw, 1.5rem)",
     color: "white",
     fontWeight: "bold",
-    lineHeight: '0.3', // Adjusted for proper spacing between lines
+    lineHeight: '1', // Adjusted for proper spacing between lines
     marginBottom: "0", // Adds space below the heading
   },
   description2: {
-    fontSize: "1.2rem",
-    lineHeight: '0.3', // Improved line spacing for readability
+    fontSize: "clamp(1rem, 3vw, 1.2rem)",
+    lineHeight: '1', // Improved line spacing for readability
   },
   description22: {
-    fontSize: "1.2rem",
+    fontSize: "clamp(1rem, 3vw, 1.2rem)",
     lineHeight: '0.3',
     marginTop: "40px",
   },
   image: {
+    //width: 'clamp(40vh, auto, 60vh)',
     height: '100vh',
     width: '60vh',
     display: 'flex',

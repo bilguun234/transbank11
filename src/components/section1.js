@@ -102,9 +102,12 @@ const styles = {
     position: "absolute",
     top: "100px",
     left: "150px",
+    width: '100%',
+    maxWidth: "200px",
+    height: "auto",
   },
   logo: {
-    width: "200px",
+    width: 'clamp(100px, 20vw, 200px)',
     height: "auto",
   },
   content: {
@@ -116,15 +119,17 @@ const styles = {
   },
   textSection: {
     marginRight: "100px", // Space between text and cards
+    zIndex: '3',
   },
   heading: {
-    fontSize: "4rem",
+    fontSize: "clamp(2.5rem, 5vw, 4rem)",
     fontWeight: "bold",
     fontFamily: "'Serif', cursive",
     margin: "0",
+    lineHeight: "1.2",
   },
   subheading: {
-    fontSize: "1.5rem",
+    fontSize: "clamp(1.2rem, 3vw, 1.5rem)",
     fontFamily: "'Arial', sans-serif",
     margin: "10px 0",
   },
@@ -133,17 +138,21 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     margin: "20px 0",
+    zIndex: '1',
   },
   card: {
-    width: "300px",
+    width: "100%",
+    maxWidth: '300px',
+    height: 'auto',
     margin: "0 10px",
+    objectFit: "contain",
   },
   cardLabels: {
     fontSize: "1.3rem",
     marginTop: "20px",
     marginLeft: '40vh',
     color: "#CA996C",
-    zIndex: '1',
+    zIndex: '2',
   },
   featuresSection: {
     position: "absolute", // Use absolute positioning
@@ -162,7 +171,7 @@ const styles = {
     textAlign: "center",
     color: "#48484B",
     fontSize: "1.3rem",
-    lineHeight: "0.3",
+    lineHeight: "1.5",
   },
   leftTopContainer: {
     position: "absolute",
@@ -170,8 +179,12 @@ const styles = {
     left: "0px",
   },
   leftTop: {
-    height: "200px",
-    width: "600px",
+    height: "auto",
+    width: 'clamp(0px, 30vw, 600px)',
+    //maxHeight: '200px',
+    //width: "100%",
+    //maxWidth: '600px',
+    //minWidth: '300px',
   },
   rightTopContainer: {
     position: "absolute",
@@ -179,8 +192,12 @@ const styles = {
     right: "0px",
   },
   rightTop: {
-    height: "500px",
-    width: "600px",
+    height: "auto",
+    width: 'clamp(100px, 30vw, 600px)',
+    //maxHeight: '500px',
+    //width: "100%",
+    //maxWidth: '600px',
+    //objectFit: "contain",
   },
   rightBottomContainer: {
     position: "absolute",
@@ -188,8 +205,12 @@ const styles = {
     right: "0px",
   },
   rightBottom: {
-    height: "250px",
-    width: "600px",
+    height: "auto",
+    width: 'clamp(100px, 20vw, 600px)',
+    //maxHeight: '250px',
+    //width: "100%",
+    //maxWidth: '600px',
+    //objectFit: "contain",
   },
   leftBottomContainer: {
     position: "absolute",
@@ -197,8 +218,12 @@ const styles = {
     left: "0px",
   },
   leftBottom: {
-    height: "300px",
-    width: "600px",
+    height: "auto",
+    width: 'clamp(100px, 20vw, 600px)',
+    //maxHeight: '300px',
+    //width: "100%",
+    //maxWidth: '600px',
+    //objectFit: "contain",
   },
   circleImageContainer: {
     height: '100vh',
